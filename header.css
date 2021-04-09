@@ -18,3 +18,19 @@ ul {
     text-decoration: none;
     display: inline-block;
 }
+
+.list-container {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+ul a li {
+    padding: 10px 60px 0px 0px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hoverdis {
+    
+}
