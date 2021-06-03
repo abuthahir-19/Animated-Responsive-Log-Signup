@@ -154,30 +154,30 @@ div.user-i #user-icon {
 }
 
 .input-div > div.user-e > div.credentials h5, .input-div > div.user-i > div.credentials h5{
-	position: absolute;
-	transform: translateY(-98%);
-	color: #999;
-	transition: .4s;
+  position: absolute;
+  transform: translateY(-98%);
+  color: #999;
+  transition: .2s;
 }
 
 .input-div.focus > div.user-i > div.credentials h5, .input-div.focus > div.user-e > div.credentials h5{
   transform: translateY(-240%);
-	transition: .4s;
+  transition: .2s;
 }
 
 
 .input-div > div.user-i > div.credentials h5 {
-	position: absolute;
-	transform: translateY(-110%);
-	color: #999;
-	transition: .4s;
+  position: absolute;
+  transform: translateY(-110%);
+  color: #999;
+  transition: .4s;
 }
 
 .input-div > div.user-e > div.credentials h5 {
-	position: absolute;
+  position: absolute;
   transform: translateY(-110%);
-	color: #999;
-	transition: .4s; 
+  color: #999;
+  transition: .4s; 
 }
 
 hr#hor-line {
@@ -221,7 +221,7 @@ div.login-button a {
   justify-content: center;
   bottom: 2.92rem;
   text-align: center;
-  left: 3.19rem;
+  left: 3.59rem;
   transition: box-shadow 400ms;
 }
 
