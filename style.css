@@ -1,136 +1,311 @@
-* {
-  margin: 0px;
-  padding: 0px;
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  background-color: #010409;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(Images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 600px) {
-  
-  .container {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
-    margin-top: 5rem;
-    box-sizing: border-box;
-  }
+div.login-in-form {
+  width: 22rem;
+  height: 445px;
+  background-color: rgb(255, 255, 255);
+  margin:6rem 12rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: .8s;
+}
 
-  .div2 {
-    height: 200px;
-    max-width: 350px;
-    margin: 25px;
-    transition: transform 350ms;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 8px 6px -6px rgb(121 121 160);
-  }
+div.login-pannel {
+  position: absolute;
+  left: 0rem;
+  transition: .8s;
+}
 
-  div.Supervisor {
-    border-top: 3px solid rgb(61, 245, 236);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    position: relative;
-    top: 130px;
-    animation-name: super;
-    animation-duration: 1.4s;
-  }
+.login-btn {
+  background-color: rgb(230, 84, 84);
+  padding: 15px;
+  text-align: center;
+  width: 176px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: .8s;
+}
 
-  div.team-builder {
-    border-top: 3px solid rgb(255, 70, 70);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    position: relative;
-    animation-name: team;
-    animation-duration: 1.4s;
-  }
+.sign-up-btn {
+  padding: 15px;
+  text-align: center;
+  width: 176px;
+  float: right;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: .8s;
+}
 
-  div.karma {
-    border-top: 3px solid rgb(235, 189, 62);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    position: relative;
-    animation-name: karma;
-    animation-duration: 1.4s;
-  }
+div > div.image {
+  position: absolute;
+  top: 20px;
+  left: 148px;
+}
 
-  div.calculator {
-    border-top: 3px solid rgb(61, 156, 245);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    position: relative;
-    top: 130px;
-    animation-name: calculator;
-    animation-duration: 1.4s;
-  }
-  .div2:hover {
-    transform: scale(1.04, 1.04);
-  }
+div > div.title {
+  position: relative;
+  font-size: 12px;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 50px;
+  top: 97px;
+}
 
-  div.box-container {
-    height: 100%;
-    padding: 10px;
-    object-fit: cover;
-    box-sizing: border-box;
-    width: 100%;
-  }
+div.login-pannel .image img {
+  height: 57px;
+  width: 57px;
+}
 
-  #heading,
-  #para {
-    margin: 7px;
-  }
+div.user-id-details {
+  position: relative;
+  justify-content: center;
+  top: -4rem;
+  left: 0.51rem;
 
-  a {
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000;
-  }
+}
 
-  img {
-    float: right;
-    padding: 24px 22px;
-  }
+div.user-i {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 1rem;
+}
 
-  @keyframes super {
-    0% {
-      left: -500px;
-      top: 130px;
-    }
-    100% {
-      left: 1px;
-      top: 130px;
-    }
-  }
+div.u {
+  top: 12.5rem;
+  left: 2.7rem;
+}
 
-  @keyframes calculator {
-    0% {
-      right: -500px;
-      top: 130px;
-    }
-    100% {
-      right: 1px;
-      top: 130px;
-    }
-  }
+div.w {
+  top: 14rem;
+  left: 3.2rem;
+}
+div.credentials {
+  position: absolute;
+  left: 26px;
+  bottom: -22px;
+}
 
-  @keyframes team {
-    0% {
-      top: -250px;
-    }
-    100% {
-      top: 1px;
-    }
-  }
+div.credentials > h5 {
+  position: relative;
+  left: -2px;
+  color: rgb(179, 179, 179);
+}
 
-  @keyframes karma {
-    0% {
-      bottom: -250px;
-    }
-    100% {
-      bottom: 1px;
-    }
-  }
+
+div.credentials input {
+  border: none;
+  width: 256px;
+  outline: none;
+  background: transparent;
+  position: relative;
+  left: -1px;
+  bottom: 19px;
+}
+
+h5 > span#required {
+  color: red;
+}
+
+div.user-i #user-icon {
+  font-size: 14px;
+  color: rgb(179, 179, 179);
+}
+
+.input-div.focus > .user-i > #user-icon  {
+  font-size: 14px;
+  color: rgb(230, 84, 84);
+  transition: .8s
+}
+
+.input-div.focus > .user-e > #user-icon {
+  font-size: 14px;
+  color: rgb(230, 84, 84);
+  transition: .8s;
+}
+
+.input-div > div.user-e > div.credentials h5, .input-div > div.user-i > div.credentials h5{
+	position: absolute;
+	transform: translateY(-98%);
+	color: #999;
+	transition: .4s;
+}
+
+.input-div.focus > div.user-i > div.credentials h5, .input-div.focus > div.user-e > div.credentials h5{
+  transform: translateY(-240%);
+	transition: .4s;
+}
+
+
+.input-div > div.user-i > div.credentials h5 {
+	position: absolute;
+	transform: translateY(-110%);
+	color: #999;
+	transition: .4s;
+}
+
+.input-div > div.user-e > div.credentials h5 {
+	position: absolute;
+  transform: translateY(-110%);
+	color: #999;
+	transition: .4s; 
+}
+
+hr#hor-line {
+  border: 1px solid rgb(179, 179, 179);
+  position: relative;
+  left: -27px;
+  bottom: 14px;
+}
+
+div.user-passcode-details {
+  position: relative;
+  justify-content: center;
+  top: 1.5rem;
+}
+
+div.forget-link {
+  position: absolute;
+  right: -56px;
+  top: 16rem;
+}
+
+div.forget-link a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 400ms;
+}
+
+div.forget-link a:hover {
+  color: rgb(230, 84, 84);
+}
+
+div.login-button a {
+  text-decoration: none;
+  background-color: rgb(230, 84, 84);
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  width: 15rem;
+  position: absolute;
+  justify-content: center;
+  bottom: 2.92rem;
+  text-align: center;
+  left: 3.19rem;
+  transition: box-shadow 400ms;
+}
+
+div.login-button a:hover {
+  box-shadow: 3px 4px 8px rgb(230 84 84);
+}
+
+
+/**   The CSS code below are the for the Registrationn pannel*/
+div.login-pannel2 {
+  position: relative;
+  left: 25rem;
+  transition: .8s;
+}
+
+div.title2 {
+  position: relative;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 45px;
+  top: 25px;
+}
+
+div.user-id-details2 {
+  position: absolute;
+  justify-content: center;
+  left: 55px;
+  top: 76px;
+}
+
+div.user-e #user-icon {
+  font-size: 14px;
+  color: rgb(179, 179, 179);
+}
+
+div.user-email-details {
+  position: absolute;
+  left: 45px;
+  top: 96px;
+}
+
+div.user-e #user-email {
+  font-size: 14px;
+  color: rgb(179, 179, 179);
+}
+
+div.pas {
+  position: absolute;
+  top: 17rem;
+  left: 3.5rem;
+}
+
+div.pas2 {
+  position: absolute;
+  top: 17rem;
+  left: 3.5rem;
+}
+
+div.email {
+  position: relative;
+  top: 7.8rem;
+}
+
+div.p {
+  position: absolute;
+  top: 13rem;
+  left: 3.5rem;
+}
+
+div.register-btn a {
+  text-decoration: none;
+  background-color: rgb(230, 84, 84);
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  width: 15rem;
+  position: absolute;
+  justify-content: center;
+  top: 20.5rem;
+  text-align: center;
+  left: 3.79rem;
+  transition: box-shadow 400ms;
+}
+
+div.register-btn a:hover {
+  box-shadow: 3px 4px 8px rgb(230 84 84);
 }

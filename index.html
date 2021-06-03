@@ -6,59 +6,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <script src="https://kit.fontawesome.com/f96082f2f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="div2 Supervisor">
-            <a href="#">
-                <div class="box-container">
-                    <div class="content-container">
-                        <h3 id="heading">Supervisor</h3>
-                        <p id="para">Scan a network for people to build your project in a much better way.</p>
-                        <img class="image team" src="four-card-feature-section-master/images/icon-supervisor.svg" alt="">
+    <div class="login-in-form">
+        <div id="btn"></div>
+        <button id="log-col" class="login-btn" onclick="Login()">Log In</button>
+        <button id="reg-col"class="sign-up-btn" onclick="Register()">Sign Up</button>
+        
+        
+        <div id="login" class="login-pannel">
+            <div class="image">
+                <img src="Images/profile.png" alt="" id="sam-img">
+            </div>
+            <div class="title">
+                <h3>Login with your account details</h3>
+            </div>
+            <div class="input-div user-id-details">
+                <div class="user-i u">
+                    <i class="fas fa-user" id="user-icon"></i>
+                    <div class="credentials">
+                        <h5>Username or E-mail <span id="required">*</span></h5>
+                        <input class="input" type="text" required>
+                        <hr id="hor-line">
                     </div>
                 </div>
-            </a>
-        </div>
-
-        <div class="div2 team-builder">
-            <a href="#">
-                <div class="box-container">
-                    <div class="content-container">
-                        <h3 id="heading">Team Builder</h3>
-                        <p id="para">Scan a network for people to build your project in a much better way.</p>
-                        <img class="image team" src="four-card-feature-section-master/images/icon-team-builder.svg" alt="">
+            </div>
+            
+            <div class="input-div user-passcode-details2">
+                <div class="user-i w">
+                    <i class="fas fa-unlock-alt" id="user-icon"></i>
+                    <div class="credentials">
+                        <h5>Password <span id="required">*</span></h5>
+                        <input class="input" type="password" required>
+                        <hr id="hor-line">
                     </div>
                 </div>
-            </a>
+            </div>
+
+            <div class="forget-link">
+                <a href="#">Forgot Password ?</a>
+            </div>
+
+            <div class="register-btn">
+                <div class="bg-round">
+                    <a href="#">LOG IN</a>
+                </div>
+            </div>
         </div>
 
-        <div class="div2 calculator">
-            <a href="#">
-                <div class="box-container">
-                    <div class="content-container">
-                        <h3 id="heading">Calculator</h3>
-                        <p id="para">Scan a network for people to build your project in a much better way.</p>
-                        <img class="image team" src="four-card-feature-section-master/images/icon-calculator.svg" alt="">
+        <div id="register" class="login-pannel2">
+            <div class="title2">
+                <h3>Register to create an account</h3>
+            </div>
+            <div class="input-div user-id-details2">
+                <div class="user-e">
+                    <i class="fas fa-user" id="user-icon"></i>
+                    <div class="credentials">
+                        <h5>Name <span id="required">*</span></h5>
+                        <input class="input" type="text" required>
+                        <hr id="hor-line">
                     </div>
                 </div>
-            </a>
-        </div>
-
-        <div class="div2 karma">
-            <a href="#">
-                <div class="box-container">
-                    <div class="content-container">
-                        <h3 id="heading">Karma</h3>
-                        <p id="para">Scan a network for people to build your project in a much better way.</p>
-                        <img class="image team" src="four-card-feature-section-master/images/icon-karma.svg" alt="">
+            </div>
+            
+            <div class="input-div user-id-details2 email">
+                <div class="user-e">
+                    <i class="fas fa-envelope" id="user-icon"></i>
+                    <div class="credentials">
+                        <h5>Email <span id="required">*</span></h5>
+                        <input class="input" type="email" required>
+                        <hr id="hor-line">
                     </div>
                 </div>
-            </a>
-        </div>
+            </div>
+            
+            <div class="input-div user-passcode-details2">
+                <div class="user-i p">
+                    <i class="fas fa-unlock-alt" id="user-icon"></i>
+                    <div class="credentials">
+                        <h5>Password <span id="required">*</span></h5>
+                        <input class="input" type="password" required>
+                        <hr id="hor-line">
+                    </div>
+                </div>
+            </div>
 
+            <div class="input-div user-passcode-details2">
+                <div class="user-i pas2">
+                    <i class="fas fa-lock" id="user-icon"></i>
+                    <div class="credentials">
+                        <h5>Confirm Password <span id="required">*</span></h5>
+                        <input class="input" type="password" required>
+                        <hr id="hor-line">
+                    </div>
+                </div>
+            </div>
+            <div class="register-btn">
+                <div class="bg-round">
+                    <a href="#">REGISTER</a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        var x = document.getElementById ("login");
+        var y = document.getElementById ("register");
+        var z = document.getElementById ("btn");
+        var bacL = document.getElementById ("log-col")
+        var bacS = document.getElementById ("reg-col");
+
+        function Register () {
+            x.style.left = "-22rem";
+            y.style.left = "0rem";
+            bacL.style.backgroundColor = "transparent";
+            bacS.style.backgroundColor = "rgb(230, 84, 84)"; 
+        }
+
+        function Login () {
+            y.style.left = "22rem";
+            x.style.left = "0rem";
+            bacL.style.backgroundColor = "rgb(230, 84, 84)";
+            bacS.style.backgroundColor = "transparent";
+        }
+
+        var inputs = document.querySelectorAll ('.input');
+        function addC1 () {
+            let parent = this.parentNode.parentNode.parentNode;
+            parent.classList.add ("focus");
+        }
+
+        function remC1 () {
+            let parent = this.parentNode.parentNode.parentNode;
+            if (this.value == "") {
+                parent.classList.remove ("focus");
+            }
+        }
+
+        inputs.forEach (input => {
+            input.addEventListener ("focus", addC1);
+            input.addEventListener ("blur", remC1);
+        })
+    </script>
 </body>
 </html>
