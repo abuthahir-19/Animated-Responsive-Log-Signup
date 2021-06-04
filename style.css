@@ -320,10 +320,22 @@ div.register-btn a:hover {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    /* margin: 1rem; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+  }
+
+  div.login-in-form {
+    width: 22rem;
+    height: 445px;
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: .8s;
   }
 }
